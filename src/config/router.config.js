@@ -16,6 +16,7 @@ export const constantRouterMap = [
                path: "/",
                name: "index",
                component: () => import("@/views/home/Index"),
+               meta: { title: '首页' },
              },
            ],
          },
