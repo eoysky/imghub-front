@@ -117,6 +117,7 @@ const vueConfig = {
     //   }
     // },
     // If you want to turn on the proxy, please remove the mockjs /src/main.jsL11
+<<<<<<< HEAD
     // 测试环境
     proxy: {
       "/api/": {
@@ -126,6 +127,17 @@ const vueConfig = {
       },
     },
     // 生产环境(实际上链接的是生产环境数据)
+=======
+   // 测试环境
+      proxy: {
+        "/api/": {
+          target: "https://imgtest.lmsite.cn",
+          changeOrigin: true,
+          pathRewrite: { "^/api": "/test" },
+        },
+      },
+  // 生产环境(实际上链接的是生产环境数据)
+>>>>>>> develop-front
     // proxy: {
     //   "/api/": {
     //     target: "https://imghub.lmsite.cn",
